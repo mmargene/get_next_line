@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmargene <mmargene@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/22 02:23:12 by mmargene          #+#    #+#             */
+/*   Updated: 2022/02/22 02:24:54 by mmargene         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line_bonus.h"
 
 char	*ft_chr_n_o(char *s)
@@ -161,16 +173,10 @@ char	*get_next_line(int fd)
 // 	close (fd2);
 // 	return(0);
 // }
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=78 
-// get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 
-// get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1 
-// get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
-// gcc -Wall -Wextra -Werror get_next_line_bonus.c 
-// get_next_line_utils_bonus.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=-1 
-// get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=0 
-// get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=78 get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1 get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+// gcc -Wall -Wextra -Werror get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=-1 get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=0 get_next_line_bonus.c get_next_line_utils_bonus.c && ./a.out
 // valgrind ./a.out --leak-check=full

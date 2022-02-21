@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmargene <mmargene@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/02/22 02:23:31 by mmargene          #+#    #+#             */
+/*   Updated: 2022/02/22 02:25:13 by mmargene         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "get_next_line.h"
 
 char	*ft_chr_n_o(char *s)
@@ -140,16 +152,10 @@ char	*get_next_line(int fd)
 // 	// sleep(1000);
 // 	return(0);
 // }
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=78 
-// get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 
-// get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1 
-// get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror get_next_line.c 
-// get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=-1 
-// get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=0 
-// get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=78 get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1 get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=-1 get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=0 get_next_line.c get_next_line_utils.c && ./a.out
 // valgrind ./a.out --leak-check=full
