@@ -119,32 +119,37 @@ char	*get_next_line(int fd)
 	return (line);
 }
 
-int main (void)
-{
-	char *line = NULL;
-	int fd;
-	// fd = -1;
-	// fd = 5;
-	// fd = 42;
-	fd = open("txt.txt", O_RDONLY);
-	while ((line = get_next_line(fd)))
-	{
-		printf("%s", line);
-		free(line);
-	}
-	free(line);
-	// line = get_next_line(fd);
-	// printf("%s", line);
-	// free(line);
-	close (fd);
-	// sleep(1000);
-	return(0);
-}
-
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=78 get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1 get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=-1 get_next_line.c get_next_line_utils.c && ./a.out
-// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=0 get_next_line.c get_next_line_utils.c && ./a.out
+// int main (void)
+// {
+// 	char *line = NULL;
+// 	int fd;
+// 	// fd = -1;
+// 	// fd = 5;
+// 	// fd = 42;
+// 	fd = open("txt.txt", O_RDONLY);
+// 	while ((line = get_next_line(fd)))
+// 	{
+// 		printf("%s", line);
+// 		free(line);
+// 	}
+// 	free(line);
+// 	// line = get_next_line(fd);
+// 	// printf("%s", line);
+// 	// free(line);
+// 	close (fd);
+// 	// sleep(1000);
+// 	return(0);
+// }
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=78 
+// get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=32 
+// get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=1 
+// get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror get_next_line.c 
+// get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=-1 
+// get_next_line.c get_next_line_utils.c && ./a.out
+// gcc -Wall -Wextra -Werror -D BUFFER_SIZE=0 
+// get_next_line.c get_next_line_utils.c && ./a.out
 // valgrind ./a.out --leak-check=full
